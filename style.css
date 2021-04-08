@@ -1,0 +1,239 @@
+html, body {
+    width: 100%;
+    /* max-width: 960px; */
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* font-size: 20px; */
+}
+
+section {
+    width: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: auto;
+    border: none;
+    padding: 5%;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 100px;
+    height: 10px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+/* div {
+    display: block;
+    border: none;
+    height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    width: fit-content;
+} */
+
+
+.top, .process, .contact {
+    background-color: #443a8b;
+}
+
+.hello, .profile {
+    background-color: #f7f7f7;
+}
+
+.mywork, .myblog, .clients {
+    background-color: #fff;
+}
+
+
+.btnhome {
+    position: relative;
+    float: left;
+    height: 350px;
+    width: 350px;
+    top: 5%;
+    left: 5%;
+    background-color: #f65589;
+    font-size: 100px;
+    color: white;
+    /* clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); */
+
+    /* border-radius: 50% 50% 50% / 60% 40% 40%; */
+    /* border-radius: 75% 25% / 35% 60%; */
+    border-radius: 64% 36% 48% 53% / 62% 59% 40% 33% ;
+    border-color: #f65589;
+    cursor: pointer;
+}
+.btnmenu {
+    position: relative;
+    float: right;
+    height: 250px;
+    width: 250px;
+    
+    top: 5%;
+    right: 5%;
+
+}
+
+h1 {
+    display: block;
+    font-size: 35em;
+    /* font-size: 124px; */
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+h2 {
+    font-size: 20em;
+    /* font-size: 75px; */
+    text-transform: capitalize;
+    display: block;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.top {
+    height: 1225px;
+    width: auto;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25vw), 0% 100%);
+    margin-bottom: -25vw;
+}
+/* // calc(100% - 85vw) */
+
+.hello {
+    height: 2224px;
+    width: auto;
+    clip-path: polygon(0 calc(100% - 25vw), 100% 0, 100% 100%, 0 calc(100% - 75vw));
+    /* margin-top: -25vw; */
+}
+
+
+.mywork {
+    height: 3866px;
+    width: auto;
+    clip-path: polygon(0 100%, calc(100% - 75vw) 0%, calc(100% - 25vw) 100%, 0% 100%);
+    /* margin-bottom: -25vw; */
+}
+
+.process {
+    height: 2146px;
+    width: auto;
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 75%);
+
+}
+
+.myblog {
+    height: 2570px;
+    width: auto;
+    clip-path: polygon(0 100%, 25% 0%, 75% 100%, 0% 100%);
+
+}
+
+.profile {
+    height: 1902px;
+    width: auto;
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 75%);
+
+}
+
+.clients {
+    height: 1884px;
+    width: auto;
+    clip-path: polygon(0 100%, 25% 0%, 75% 100%, 0% 100%);
+
+}
+
+.contact {
+    height: 1896px;
+    width: auto;
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.name {
+    border: none;
+    height: 80;
+    width: fit-content;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    top: 7%;
+    left: 50%;
+    display: block;
+    writing-mode: vertical-rl;
+    transform: rotateZ(180deg);
+    /* writing-mode: tb-rl; */
+    color: white;
+    text-align: left;
+    
+}
+
+.title {
+    /* position: relative; */
+    color: black;
+    left: 50%;
+    top: 15%;
+    display: block;
+    text-align: center;
+    /* line-height: 1.2em; */
+    margin-bottom: 20px;
+}
+
+
+
+/* .top {
+
+}
+
+.hello {
+
+}
+
+.mywork {
+
+}
+
+.process {
+
+}
+
+.myblog {
+
+}
+
+.profile {
+
+}
+
+.clients {
+
+}
+
+.contact {
+    
+} */
