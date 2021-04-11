@@ -8,12 +8,13 @@ html, body {
 
 section {
     width: auto;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    display: block;
+    /* display: flex;
+    flex-flow: column;
+    flex-wrap: wrap; */
     margin: auto;
     border: none;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 .container {
@@ -82,23 +83,24 @@ section {
 }
 
 h1 {
-    display: block;
-    font-size: 35em;
+    display: inline;
+    font-size: 20em;
     /* font-size: 124px; */
     text-align: center;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 
 h2 {
-    font-size: 20em;
+    display: inline;
+    font-size: 15em;
     /* font-size: 75px; */
-    text-transform: capitalize;
-    display: block;
+    /* text-transform: capitalize; */
 }
 
 h3 {
-    font-size: 32px;
+    display: inline;
+    font-size: 5em;
 }
 
 h4 {
@@ -118,87 +120,147 @@ p {
 }
 
 .top {
+    position: relative;
     height: 1225px;
     width: auto;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25vw), 0% 100%);
-    margin-bottom: -25vw;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 25vw),
+        0 100%
+        );
+    margin-bottom: -25%;
+    padding-bottom: 25%;
 }
+/*  */
 /* // calc(100% - 85vw) */
 
 .hello {
+    position: relative;
     height: 2224px;
     width: auto;
-    clip-path: polygon(0 calc(100% - 25vw), 100% 0, 100% 100%, 0 calc(100% - 75vw));
-    /* margin-top: -25vw; */
+    clip-path: polygon(
+        0 calc(100% - 75vw),
+        100% 0,
+        100% 100%,
+        0 calc(100% - 25vw)
+        );
+    margin-bottom: -25%;
+    padding-top: 25%;
 }
 
 
 .mywork {
+    position: relative;
     height: 3866px;
     width: auto;
-    clip-path: polygon(0 100%, calc(100% - 75vw) 0%, calc(100% - 25vw) 100%, 0% 100%);
+    clip-path: polygon(
+        0 0,
+        100% calc(100% - 75vw),
+        100% calc(100% - 25vw),
+        0 100%);
     /* margin-bottom: -25vw; */
 }
 
 .process {
+    position: relative;
     height: 2146px;
     width: auto;
-    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 75%);
+    clip-path: polygon(
+        0 calc(100% - 75vw),
+        100% 0,
+        100% 100%,
+        0% calc(100% - 25vw)
+        );
 
 }
 
 .myblog {
+    position: relative;
     height: 2570px;
     width: auto;
-    clip-path: polygon(0 100%, 25% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(
+        0 0,
+        100% calc(100% - 75vw),
+        100% calc(100% - 25vw),
+        0 100%
+        );
 
 }
 
 .profile {
+    position: relative;
     height: 1902px;
     width: auto;
-    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 75%);
+    clip-path: polygon(
+        0 calc(100% - 75vw),
+        100% 0,
+        100% 100%,
+        0 calc(100% - 25vw)
+        );
 
 }
 
 .clients {
+    position: relative;
     height: 1884px;
     width: auto;
-    clip-path: polygon(0 100%, 25% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(
+        0 0,
+        100% calc(100% - 75vw),
+        100% calc(100% - 25vw),
+        0 100%
+        );
 
 }
 
 .contact {
+    position: relative;
     height: 1896px;
     width: auto;
-    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(
+        0 calc(100% - 75vw),
+        100% 0,
+        100% 100%,
+        0 100%
+        );
 
 }
 
 .name {
-    border: none;
+    /* border: none;
     height: 80;
     width: fit-content;
     margin: 20px;
-    padding: 20px;
-    position: relative;
     top: 7%;
     left: 50%;
-    display: block;
-    writing-mode: vertical-rl;
-    transform: rotateZ(180deg);
-    /* writing-mode: tb-rl; */
+    /* padding: 20px; */
+    /* writing-mode: vertical-rl;
+    transform: rotateZ(180deg); */
+    position: relative;
+    display: inline;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    text-transform: uppercase;
     color: white;
-    text-align: left;
+    /* text-align: left; */
     
 }
 
+.textPink {
+    position: relative;
+    display: inline;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    color: #f65589;
+}
+
 .title {
-    /* position: relative; */
+    position: relative;
     color: black;
     left: 50%;
     top: 15%;
-    display: block;
+    display: inline-block;
     text-align: center;
     /* line-height: 1.2em; */
     margin-bottom: 20px;
