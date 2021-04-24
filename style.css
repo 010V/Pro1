@@ -2,8 +2,14 @@ html, body {
     width: 100%;
     /* max-width: 960px; */
     height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; */
+    font-family: -apple-system, 'Montserrat', sans-serif;
     /* font-size: 20px; */
+}
+
+main {
+    display: flex;
+    flex-flow: column;
 }
 
 section {
@@ -54,7 +60,8 @@ section {
 
 
 .btnhome {
-    position: relative;
+    position: static;
+    /* object-position: left; */
     float: left;
     height: 350px;
     width: 350px;
@@ -72,7 +79,7 @@ section {
     cursor: pointer;
 }
 .btnmenu {
-    position: relative;
+    position: static;
     float: right;
     height: 250px;
     width: 250px;
@@ -104,7 +111,8 @@ h3 {
 }
 
 h4 {
-    font-size: 25px;
+    display: inline;
+    font-size: 4em;
 }
 
 h5 {
@@ -121,8 +129,9 @@ p {
 
 .top {
     position: relative;
+    z-index: -1;
     height: 1225px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 0,
         100% 0,
@@ -137,8 +146,10 @@ p {
 
 .hello {
     position: relative;
+    /* position: absolute; */
+    z-index: -1;
     height: 2224px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 calc(100% - 75vw),
         100% 0,
@@ -152,8 +163,9 @@ p {
 
 .mywork {
     position: relative;
+    z-index: -1;
     height: 3866px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 0,
         100% calc(100% - 75vw),
@@ -164,8 +176,9 @@ p {
 
 .process {
     position: relative;
+    z-index: -1;
     height: 2146px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 calc(100% - 75vw),
         100% 0,
@@ -177,8 +190,9 @@ p {
 
 .myblog {
     position: relative;
+    z-index: -1;
     height: 2570px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 0,
         100% calc(100% - 75vw),
@@ -190,8 +204,9 @@ p {
 
 .profile {
     position: relative;
+    z-index: -1;
     height: 1902px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 calc(100% - 75vw),
         100% 0,
@@ -203,8 +218,9 @@ p {
 
 .clients {
     position: relative;
+    z-index: -1;
     height: 1884px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 0,
         100% calc(100% - 75vw),
@@ -216,8 +232,9 @@ p {
 
 .contact {
     position: relative;
+    z-index: -1;
     height: 1896px;
-    width: auto;
+    width: 100%;
     clip-path: polygon(
         0 calc(100% - 75vw),
         100% 0,
@@ -266,6 +283,18 @@ p {
     margin-bottom: 20px;
 }
 
+.describe {
+    position: relative;
+    color: black;
+    left: 50%;
+    top: 15%;
+    display: inline-block;
+    text-align: center;
+    border-left: 6px solid grey;
+    height: 2em;
+    /* line-height: 1.2em; */
+    /* margin-bottom: 5px; */
+}
 
 
 /* .top {
